@@ -1,0 +1,29 @@
+ protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(WebConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select count(*) from tbl_login where Username='" + tb_user.Text + "' ", con);
+            int temp = Convert.ToInt32(cmd.ExecuteScalar().ToString());
+            con.Close();
+            if (temp == 1)
+            {
+                con.Open();
+                SqlCommand cmd1 = new SqlCommand("select Password from tbl_login where Username='" + tb_user.Text + "' ", con);
+                String temp1 = cmd1.ExecuteScalar().ToString().Replace(" ","");
+                if(temp1==tb_pass.Text)
+                {
+                    Session["new"] = tb_user.Text;
+                    Response.Write("Correct");
+                }
+                else
+                {
+                    Response.Write("incorrect");
+                }
+
+            }
+            else
+            {
+                Response.Write("Username/password is incorrect");
+            }
+
+        }
