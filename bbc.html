@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <style>
+            .topbar
+            {
+                background-color:black;
+                width: 100%;
+                height: 60px;
+            }
+            
+            body
+            {
+                margin:0;
+                padding:0;
+                font-family:Arial,Helvetica,freesans,sans-serif; 
+                color:white;
+            }
+            #logo
+            {
+                float: left;
+            }
+            .topbarsection
+            {
+                float: left;
+                border-left: 1px gray solid;
+                height: 100%;
+            }
+            #sign_in_logo
+            {
+                margin-left: 20px;
+                height: 90%;
+                margin-top: 5px;
+                float: left;
+            }
+            #sign_in_text
+            {
+                font-weight: bold;
+                font-size: 120%;
+                position: relative;
+                top:20px;
+                left: 5px;
+            }
+            input
+            {
+                width: 320px;
+                height: 40px;
+                position: relative;
+                bottom: 10px;
+                background-image:url(search.PNG);
+                background-repeat: no-repeat;
+                background-size: 27px 27px;
+                background-position: 280px 5px;
+                padding-top: 3px;
+            }
+            ::-webkit-input-placeholder
+            {
+                font-weight: bold;
+                font-family: Arial,Helvetica,freesans,sans-serif; 
+                color: black;
+                font-size: 150%;
+                padding-left: 10px;
+            
+            }
+            #newsbar
+            {
+                background-color: #BB1919;
+                height: 140px;
+            }
+            h1
+            {
+                padding: 0;
+                margin: 0;
+                margin-left: 30px;
+                font-family: Arial,Helvetica,freesans,sans-serif; 
+                padding-top: 10px;
+                font-size: 60px;
+                font-weight: normal;
+            }
+            #newsselection
+            {
+                float: left;
+                border-left: 1px gray solid;
+                height: 20%;
+                font-weight: normal;
+                font-size: 130%;
+                position: relative;
+                top:20px;
+                left: 5px;
+            }
+            #homediv
+            {
+                margin-top:20px;
+                padding-left: 35px;
+                padding-bottom:20px;
+                font-weight: normal;
+                font-size: 130%;
+                float: left;
+                margin-right: 13px;
+            }
+            a
+            {
+                text-decoration: none;
+                color:white;
+            }
+            a:hover
+            {
+                text-decoration: underline;
+            }
+            h2
+            {
+                
+                font-weight: normal;
+                color:rgb(78, 78, 78);
+                font-size: 210%;
+                border-bottom:3px #BB1919 solid;
+                width: 170px;
+            }
+            #page
+            {
+                padding-left: 30px;
+                margin-top: -10px;
+
+            }
+            h3 a
+            {
+                font-size: 250%;
+                color:#646363;
+                text-decoration:none;
+
+            }
+            h3 a:hover
+            {
+                color:blue;
+                text-decoration: none;
+            }
+            p
+            {
+                color:#646363;
+                font-family: Arial,Helvetica,freesans,sans-serif; 
+                font-size:130%;
+            }
+            #tech a
+            {
+                color:#BB1919;
+                float: left;
+                margin-left: 185px;
+                margin-top:-22px;
+                font-size: 120%;
+            }
+            #tech a:hover
+            {
+                text-decoration: none;
+                color:blue;
+            }
+            #ceo_img img
+            {
+                float:left;
+                margin-left:110px;
+                height: 330px;
+                margin-top:-120px;
+            }
+        </style>
+        <title>bbc-proj</title>
+    </head>
+    <body>
+        
+        <div class="topbar">
+            <img id ="logo" src="Screenshot (18).png" style="margin-left:20px" height="100% float:left">
+            <div id="signindiv" class="topbarsection"style="margin-right:120px">
+                <img id="sign_in_logo" src="logo.PNG">
+                <a href="" id="sign_in_text">Sign in</a>
+            </div>    
+            <div id="signindiv" class="topbarsection" style="padding-right:30px;padding-left:20px">
+                <a href="" id="sign_in_text">News</a>
+            </div>
+            <div id="signindiv" class="topbarsection"style="padding-right:30px;padding-left:20px">
+                <a href="" id="sign_in_text">Sport</a>
+            </div>
+            <div id="signindiv" class="topbarsection"style="padding-right:30px;padding-left:20px">
+                <a href="" id="sign_in_text">Weather</a>
+            </div>
+            <div id="signindiv" class="topbarsection"style="padding-right:30px;padding-left:20px">
+                <a href="" id="sign_in_text">Shop</a>
+            </div>
+            <div id="signindiv" class="topbarsection"style="padding-right:30px;padding-left:20px">
+                <a href="" id="sign_in_text">Earth</a>
+            </div>
+            <div id="signindiv" class="topbarsection"style="padding-right:30px;padding-left:20px">
+                <a href="" id="sign_in_text">Travel</a>
+            </div>
+            <div id="signindiv" class="topbarsection"style="padding-right:30px;padding-left:20px">
+                <a href="" id="sign_in_text">More</a>
+            </div>
+            <div id="signindiv" class="topbarsection"style="padding-right:30px;padding-left:20px">
+                <input type="text" placeholder="Search" style="margin-top:20px">
+            </div>
+        </div>
+        <div id="newsbar">
+            <h1>NEWS</h1>
+            <div >
+                <a href="" href="" id="homediv" >Home</a>
+            </div>
+            <div id="newsselection">
+                <a href="" href="" style="margin-left:20px;margin-right: 20px;">Video</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">World</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">Asia</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">UK</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">Buisness</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">Tech</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">Science</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">Stories</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">Entertainment & Arts</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">Health</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">World News TV</a>
+            </div>
+            <div id="newsselection">
+                <a href="" style="margin-left:20px;margin-right: 20px;">More</a>
+            </div>
+        </div>
+        <div id="page">
+            <h2>Technology</h2>
+            <h3><a href="">Apple boss calls for chip story retraction</a></h3>
+            <p>Tim Cook takes an unprecedented<br>step in saying an explosive<br> Bloomberg story contained "no truth".</p>
+            <div style="border-right: 2px #b9b9b9 solid;width:170px;height: 23px;"><p>19 October 2018</p></div>
+            <div id="tech"><a href="";>Technology</a></div>
+            <div id=ceo_img><img src="ceo.PNG"></div>
+            <hr style="margin-top:230px;"align="left" width="65%">
+        </div>
+
+        
+    </body>
+</html>
