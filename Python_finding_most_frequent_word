@@ -1,0 +1,26 @@
+counts=dict()
+text=input('Enter text ')
+lst=[]
+words=text.split()
+
+for word in words:
+    counts[word]=counts.get(word,0)+1
+
+for key in counts:
+    if counts[key] > 2:
+        print(key)
+ 
+
+
+
+#extra code
+
+
+lst=list(counts.values())
+lst.sort()
+
+for i in range(len(lst)):
+    if  lst[i] > 2:
+        print(counts[lst[i]])
+
+#extra
